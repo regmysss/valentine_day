@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('../valentine_day/source/images/background.png');
+    background-image: url('../source/images/background.png');
     background-size: cover;
     backdrop-filter: blur(10px);
     background-repeat: no-repeat;
