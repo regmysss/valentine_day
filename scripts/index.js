@@ -45,3 +45,5 @@ btnPrevElement.addEventListener('click', () => {
             btnNextElement.style.display = 'block';
     }
 });
+
+changeText();
