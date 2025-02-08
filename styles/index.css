@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('../source/images/background.png');
+    background-image: url('../valentine_day/source/images/background.png');
     background-size: cover;
     backdrop-filter: blur(10px);
     background-repeat: no-repeat;
@@ -71,9 +71,9 @@ body::after {
 
 .btn-control {
     position: absolute;
-    bottom: -15px;
+    bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50%);
     display: flex;
     gap: 10px;
 }
@@ -91,7 +91,7 @@ body::after {
     display: none;
 }
 
-.heart{
+.heart {
     height: 250px;
     animation-name: heart;
     animation-duration: 1s;
@@ -102,9 +102,11 @@ body::after {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.2);
     }
+
     100% {
         transform: scale(1);
     }
