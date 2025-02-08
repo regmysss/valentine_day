@@ -2,12 +2,14 @@ const title = [
     'Привіт',
     'Ти заслуговуєш',
     'Цінуй миті',
+    '❤️❤️❤️'
 ];
 
 const text = [
     'Нехай цей день принесе тобі усмішку, нові можливості та приємні моменти. Почни його з позитивних думок і гарного настрою!',
     'Ти заслуговуєш на найкраще. Твоя доброта та посмішка роблять цей світ яскравішим, тому цінуй себе і свої маленькі перемоги кожного дня.',
-    'Кожен день унікальний, і він не повториться. Тож цінуй його і наповнюй любов\'ю та гарними емоціями.'
+    'Кожен день унікальний, і він не повториться. Тож цінуй його і наповнюй любов\'ю та гарними емоціями.',
+    '<img class="heart" src="../valentine_day/source/images/heart.png" alt="heart" />'
 ]
 
 const titleElement = document.querySelector('.title');
@@ -18,8 +20,8 @@ const btnPrevElement = document.getElementById('prev');
 let step = 0;
 
 function changeText() {
-    titleElement.textContent = title[step];
-    textElement.textContent = text[step];
+    titleElement.innerHTML = title[step];
+    textElement.innerHTML = text[step];
 };
 
 btnNextElement.addEventListener('click', () => {
